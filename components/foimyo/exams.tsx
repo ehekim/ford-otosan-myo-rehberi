@@ -2,7 +2,7 @@ import { SectionShell } from './section-shell'
 import Image from 'next/image'
 import { CalendarX, ClipboardCheck, AlertTriangle, Sigma, ArrowUpRight } from 'lucide-react'
 
-const CALENDAR_URL = 'https://odb.kocaeli.edu.tr/sayfalar/akademik-takvim-974k'
+const CALENDAR_URL = 'https://kocaeli.edu.tr'
 
 const grades = ['FF', 'FD', 'DD', 'DC', 'CC', 'CB', 'BB', 'BA', 'AA']
 

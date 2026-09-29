@@ -1,4 +1,5 @@
 import { SectionShell } from './section-shell'
+import Image from 'next/image'
 import { CalendarX, ClipboardCheck, AlertTriangle, Sigma } from 'lucide-react'
 
 const grades = ['FF', 'FD', 'DD', 'DC', 'CC', 'CB', 'BB', 'BA', 'AA']
@@ -36,8 +37,47 @@ export function Exams() {
           icon={<Sigma size={18} />}
           title="Takvim"
           big="ODB"
-          body="Vize, final ve bütünleme tarihleri akademik takvimde ilan edilir. Takvime Kaynaklar bölümünden ulaşılabilir."
+          body="Vize, final ve bütünleme tarihleri akademik takvimde ilan edilir. Takvime aşağıdaki bağlantıdan ulaşılabilir."
         />
+      </div>
+
+      {/* Akademik takvim önizleme */}
+      <div className="mt-6 grid gap-6 border border-cream/20 bg-cream/[0.03] p-6 sm:p-8 lg:grid-cols-5 lg:items-center">
+        <div className="flex flex-col gap-4 lg:col-span-2">
+          <span className="font-mono text-[11px] tracking-label text-cream/50">
+            AKADEMİK TAKVİM
+          </span>
+          <h3 className="text-3xl font-black uppercase tracking-tight sm:text-4xl">
+            Tarihleri Takip Et
+          </h3>
+          <p className="text-sm leading-relaxed text-cream/75">
+            Kocaeli Üniversitesi ana sayfasında <strong>Öğrenci → Genel → Akademik Takvim</strong>{' '}
+            yolunu izleyerek güncel takvime ulaşabilirsin. Ders kayıtları, vize, final ve
+            bütünleme haftaları burada ilan edilir.
+          </p>
+        </div>
+
+        <div className="group lg:col-span-3">
+          <figure className="overflow-hidden rounded-md border border-cream/25 bg-cream">
+            <div className="flex items-center gap-2 border-b border-ink/15 px-4 py-2.5">
+              <span className="h-2.5 w-2.5 rounded-full bg-ink/20" />
+              <span className="h-2.5 w-2.5 rounded-full bg-ink/20" />
+              <span className="h-2.5 w-2.5 rounded-full bg-ink/20" />
+              <span className="ml-2 font-mono text-[11px] tracking-label text-ink/50">
+                kocaeli.edu.tr
+              </span>
+            </div>
+            <div className="relative aspect-[1913/896] w-full">
+              <Image
+                src="/images/akademik-takvim.png"
+                alt="Kocaeli Üniversitesi web sitesinde Öğrenci menüsü altında Akademik Takvim bağlantısının bulunduğu sayfa"
+                fill
+                sizes="(max-width: 1024px) 100vw, 60vw"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+              />
+            </div>
+          </figure>
+        </div>
       </div>
 
       {/* Çan eğrisi */}

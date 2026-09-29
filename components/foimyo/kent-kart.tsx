@@ -19,7 +19,7 @@ export function KentKart() {
   return (
     <SectionShell
       id="kentkart"
-      index="06"
+      index="07"
       kicker="KENT KART NEREDEN ALINIR?"
       title={
         <>
@@ -28,7 +28,7 @@ export function KentKart() {
           Noktaları
         </>
       }
-      intro="Kent kartını aşağıdaki satış / dolum noktalarından alabilir ve abonman yükleyebilirsin. Abonman her zaman daha avantajlı; bakiyeni Ekomobil'den kontrol et."
+      intro="Kent Kart, aşağıdaki satış ve dolum noktalarından temin edilebilir; bu noktalarda abonman yüklemesi de yapılabilir. Bakiye bilgisi Ekomobil uygulamasından takip edilebilir."
     >
       <div className="grid gap-6 md:grid-cols-3">
         {points.map((p) => (

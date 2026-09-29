@@ -43,9 +43,9 @@ export function Hero() {
 
           <div className="relative z-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
             <p className="max-w-sm text-pretty text-base leading-relaxed text-ink/80">
-              Okula nasıl gelinir, yemekhane nasıl çalışır, sınav sistemi nedir?
-              Ford Otosan MYO&apos;da ilk yılını yaşayacak herkes için hazırlanmış,
-              abisi-ablası ağzından pratik bir rehber.
+              Ulaşım, yemekhane, sınav sistemi ve staj süreçleri hakkında temel
+              bilgiler. Ford Otosan MYO&apos;ya yeni başlayan öğrenciler için
+              hazırlanmış bir bilgilendirme rehberi.
             </p>
             <div className="flex flex-col gap-3 self-end">
               <a

@@ -19,7 +19,7 @@ const links = [
   },
   {
     label: 'e-DESTEK',
-    desc: 'Hocaların ders sunumları',
+    desc: 'Ders sunumları ve materyaller',
     href: 'https://edestek1.kocaeli.edu.tr/login/index.php?loginredirect=1',
   },
 ]
@@ -36,7 +36,7 @@ export function Resources() {
           <br />& Erişim
         </>
       }
-      intro="Sık kullanacağın resmi bağlantılar tek yerde. Kampüs WiFi&apos;ına da ÖBS bilgilerinle bağlanıyorsun."
+      intro="Sık kullanılan resmi bağlantılar ve kampüs kablosuz ağ erişim bilgisi."
     >
       <div className="grid gap-px overflow-hidden border border-ink/25 bg-ink/15 sm:grid-cols-2">
         {links.map((l) => (
@@ -70,8 +70,8 @@ export function Resources() {
         <div className="flex flex-col gap-1">
           <h3 className="text-xl font-black uppercase tracking-tight">Kampüs WiFi</h3>
           <p className="text-sm leading-relaxed text-cream/80">
-            WiFi&apos;a bağlanmak için <strong>ÖBS&apos;de giriş yaptığın şifre ve öğrenci
-            numaranı</strong> kullanıyorsun. Ekstra bir kurulum yok.
+            Kampüs kablosuz ağına <strong>öğrenci numarası ve ÖBS şifresi</strong> ile
+            bağlanılır. Ek bir kurulum gerekmemektedir.
           </p>
         </div>
       </div>

@@ -6,6 +6,7 @@ import { CampusLife } from '@/components/foimyo/campus-life'
 import { Exams } from '@/components/foimyo/exams'
 import { Resources } from '@/components/foimyo/resources'
 import { KentKart } from '@/components/foimyo/kent-kart'
+import { Internship } from '@/components/foimyo/internship'
 import { SiteFooter } from '@/components/foimyo/site-footer'
 
 export default function Page() {
@@ -18,6 +19,7 @@ export default function Page() {
       <CampusLife />
       <Exams />
       <Resources />
+      <Internship />
       <KentKart />
       <SiteFooter />
     </main>

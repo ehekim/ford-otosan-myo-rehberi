@@ -1,11 +1,20 @@
 import Image from 'next/image'
 import { SectionShell } from './section-shell'
-import { UtensilsCrossed, Coffee, ShoppingCart, Clapperboard, Clock, Wallet } from 'lucide-react'
+import {
+  UtensilsCrossed,
+  Coffee,
+  ShoppingCart,
+  Clapperboard,
+  Clock,
+  Wallet,
+  MapPin,
+  ArrowUpRight,
+} from 'lucide-react'
 
 const nearby = [
-  { name: 'Şok · Bim · Hakmar', note: '680 durağının yanında, marketler' },
+  { name: 'Şok · Bim · Hakmar', note: '680 durağının yakınında' },
   { name: 'Dönerci & Pideci', note: 'İhsaniye merkezde' },
-  { name: 'Kokoreççi', note: 'Okula 500 m, yokuş yukarı' },
+  { name: 'Kokoreççi', note: 'Okula yaklaşık 500 m' },
 ]
 
 export function CampusLife() {
@@ -21,7 +30,7 @@ export function CampusLife() {
           Hayatı
         </>
       }
-      intro="Öğle yemeği nasıl alınır, kantinde ne var, teras nerede ve okulun çevresinde nereden karnını doyurursun? Hepsi burada."
+      intro="Yemekhane kullanımı, kantin ve teras imkânları ile okul çevresindeki temel hizmetler hakkında bilgiler."
     >
       <div className="grid gap-6 lg:grid-cols-12">
         {/* Yemekhane */}
@@ -38,14 +47,14 @@ export function CampusLife() {
           </div>
           <div className="border-t border-ink/15 pt-4 text-sm leading-relaxed text-ink/80">
             <p>
-              Kart için <strong>ÖBS&apos;den başvuru</strong> yapıyorsun, kart Gölcük
-              Ziraat şubesine teslim ediliyor. Ziraat Bankası uygulamasından kartın
-              içine para atıp, okuldaki <strong>POS cihazından bakiye güncellemesi</strong>{' '}
-              yaparak yüklüyorsun.
+              Kart başvurusu <strong>ÖBS üzerinden</strong> yapılır ve kart Gölcük
+              Ziraat Bankası şubesine teslim edilir. Ziraat Bankası uygulamasından
+              karta bakiye yüklendikten sonra okuldaki{' '}
+              <strong>POS cihazından bakiye güncellemesi</strong> yapılmalıdır.
             </p>
             <p className="mt-3 rounded-md bg-ink/5 p-3 font-mono text-[12px] leading-relaxed text-ink/70">
-              {'>'} 1. sınıflar için sene başında 1 hafta imza karşılığı nakit kabul
-              ediliyor.
+              {'>'} 1. sınıf öğrencileri için dönem başında bir hafta süreyle imza
+              karşılığı nakit ödeme kabul edilmektedir.
             </p>
           </div>
         </div>
@@ -60,20 +69,20 @@ export function CampusLife() {
           </div>
           <ul className="flex flex-col gap-3 text-sm leading-relaxed text-ink/80">
             <li className="flex gap-2">
-              <span className="text-ink/40">—</span> Çay, kahve, tost çeşitleri ve bir
-              kantinden bekleyeceğin her şey satılıyor.
+              <span className="text-ink/40">—</span> Kantinde çay, kahve, tost
+              çeşitleri ve atıştırmalıklar satılmaktadır.
             </li>
             <li className="flex gap-2">
               <span className="text-ink/40">—</span> Teras ve yemekhane{' '}
-              <strong>3. katta.</strong>
+              <strong>3. kattadır.</strong>
             </li>
             <li className="flex gap-2">
               <span className="text-ink/40">—</span> Ters katta{' '}
-              <strong>bilardo ve langırt</strong> var.
+              <strong>bilardo ve langırt</strong> bulunmaktadır.
             </li>
             <li className="flex gap-2">
-              <span className="text-ink/40">—</span> Sigara sadece terasın belirli
-              bölümlerinde serbest; onun dışında her yerde yasak.
+              <span className="text-ink/40">—</span> Sigara yalnızca terasın
+              belirlenmiş bölümlerinde içilebilir; diğer tüm alanlarda yasaktır.
             </li>
           </ul>
         </div>
@@ -117,9 +126,23 @@ export function CampusLife() {
               <h3 className="text-2xl font-black uppercase tracking-tight">Symbol AVM</h3>
             </div>
             <p className="text-sm leading-relaxed text-cream/80">
-              Symbol AVM&apos;de <strong>KOÜ öğrencilerine sinema bileti çok
-              indirimli.</strong> Ders arası ya da hafta sonu takılmak için birebir.
+              Symbol AVM&apos;de <strong>KOÜ öğrencilerine indirimli sinema bileti</strong>{' '}
+              uygulanmaktadır. Alışveriş, yeme-içme ve sosyal etkinlikler için
+              okula en yakın alışveriş merkezidir.
             </p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Symbol+AVM+Kocaeli"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-3 inline-flex w-fit items-center gap-2 rounded-full bg-cream px-5 py-2.5 font-mono text-xs tracking-label text-ink transition-colors hover:bg-paper"
+            >
+              <MapPin size={14} aria-hidden="true" />
+              HARİTADA GÖR
+              <ArrowUpRight
+                size={14}
+                className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
+            </a>
           </div>
         </div>
       </div>

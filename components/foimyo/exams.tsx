@@ -16,7 +16,7 @@ export function Exams() {
           Notlandırma
         </>
       }
-      intro="Üniversitede lisedeki gibi '50 aldım geçtim' yok. Devamsızlık hakkın, vize–final oranları ve çan eğrisinin nasıl çalıştığını baştan bilmek işini kolaylaştırır."
+      intro="Üniversitede notlandırma, lisedeki sabit geçme notu sisteminden farklıdır. Devamsızlık sınırı, vize–final oranları ve bağıl değerlendirme (çan eğrisi) sistemi aşağıda özetlenmiştir."
     >
       {/* Quick facts */}
       <div className="grid gap-6 md:grid-cols-3">
@@ -24,19 +24,19 @@ export function Exams() {
           icon={<CalendarX size={18} />}
           title="Devamsızlık"
           big="4"
-          body="Her ders için 4 devamsızlık hakkın var. Aşarsan devamsızlıktan kalırsın."
+          body="Her ders için 4 devamsızlık hakkı bulunur. Bu sınırın aşılması durumunda öğrenci devamsızlıktan kalır."
         />
         <DarkTile
           icon={<ClipboardCheck size={18} />}
           title="Vize & Final"
           big="%30 / %70"
-          body="Örnek: vizenin %30'u + finalin %70'i. Oranlar hocaya göre değişir. Vizenin tekrarı yok; finalden kalırsan bütünlemeye girersin."
+          body="Örnek: vizenin %30'u + finalin %70'i. Oranlar dersi veren öğretim elemanına göre değişebilir. Vizenin telafisi yoktur; finalde başarısız olan öğrenci bütünleme sınavına girer."
         />
         <DarkTile
           icon={<Sigma size={18} />}
           title="Takvim"
           big="ODB"
-          body="Vize, final ve büt tarihlerinin hepsi akademik takvimde açıklanır. Kaynaklar bölümünden ulaşabilirsin."
+          body="Vize, final ve bütünleme tarihleri akademik takvimde ilan edilir. Takvime Kaynaklar bölümünden ulaşılabilir."
         />
       </div>
 
@@ -50,11 +50,12 @@ export function Exams() {
             Çan Eğrisi
           </h3>
           <p className="max-w-3xl text-sm leading-relaxed text-cream/75">
-            Notun tek başına değil, <strong>sınıfın o sınavdaki genel başarısına göre</strong>{' '}
-            değer kazanır. Ortalama <strong>35</strong>&apos;e düşerse aldığın{' '}
-            <strong>42</strong> ortalamanın üstünde kalır ve CB/BB bile getirebilir.
-            Ortalama <strong>80</strong> çıkarsa aldığın <strong>60</strong> altta kalıp
-            FD/FF ile kalmana sebep olabilir.
+            Not, tek başına değil <strong>sınıfın o sınavdaki genel başarısına göre</strong>{' '}
+            değerlendirilir. Sınıf ortalaması <strong>35</strong> olduğunda{' '}
+            <strong>42</strong> puan ortalamanın üzerinde kalır ve CB/BB harf notuna
+            karşılık gelebilir. Ortalama <strong>80</strong> olduğunda ise{' '}
+            <strong>60</strong> puan ortalamanın altında kalarak FD/FF notuna
+            karşılık gelebilir.
           </p>
         </div>
 
@@ -89,11 +90,11 @@ export function Exams() {
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           <Rule
             title="Baraj notu"
-            body="Çanın uygulanabilmesi için bir alt limit vardır (örn. finalden en az 40–50). Sınıf ortalaması 20 bile olsa barajın altında kalırsan çan seni kurtarmaz, doğrudan kalırsın."
+            body="Bağıl değerlendirmenin uygulanabilmesi için bir alt sınır vardır (örn. finalden en az 40–50). Sınıf ortalaması düşük olsa dahi baraj notunun altında kalan öğrenci dersten başarısız sayılır."
           />
           <Rule
-            title="Kataloğa (mutlak) düşme"
-            body="Sınıf mevcudu çok azsa (genelde 15–20 kişinin altı) ya da hoca bağıl sistemi kapatırsa mutlak sistem uygulanır: eski usul 50 alan geçer, altı kalır."
+            title="Mutlak değerlendirme"
+            body="Sınıf mevcudu az olduğunda (genellikle 15–20 kişinin altı) ya da öğretim elemanı bağıl sistemi uygulamadığında mutlak değerlendirme yapılır: 50 ve üzeri puan alan öğrenci başarılı sayılır."
           />
         </div>
       </div>

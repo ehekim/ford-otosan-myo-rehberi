@@ -10,6 +10,7 @@ const links = [
   { href: '#kampus', label: 'KAMPÜS' },
   { href: '#sinav', label: 'SINAV' },
   { href: '#kaynaklar', label: 'KAYNAKLAR' },
+  { href: '#staj', label: 'STAJ' },
   { href: '#kentkart', label: 'KENT KART' },
 ]
 

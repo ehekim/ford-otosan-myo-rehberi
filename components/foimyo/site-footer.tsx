@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { MessageSquarePlus } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from './brand-icons'
 
 export function SiteFooter() {
@@ -37,7 +38,18 @@ export function SiteFooter() {
             <span>{'{ BİLGİLENDİRME AMAÇLIDIR }'}</span>
           </div>
 
-          <div className="flex items-center justify-center gap-3 border-t border-cream/20 pt-6 text-sm text-cream/80">
+          <div className="flex flex-col items-center justify-center gap-4 border-t border-cream/20 pt-6 text-sm text-cream/80 sm:flex-row sm:gap-6">
+            <a
+              href="https://forms.gle/AxZC6kJXcuB89GY49"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-cream/30 px-4 py-2 font-mono text-[11px] tracking-label text-cream transition-colors hover:bg-cream hover:text-ink"
+            >
+              <MessageSquarePlus size={14} aria-hidden="true" />
+              GERİ BİLDİRİM / KATKIDA BULUN
+            </a>
+            <span aria-hidden="true" className="hidden h-5 w-px bg-cream/20 sm:block" />
+            <div className="flex items-center gap-3">
             <span className="font-semibold">Efe Soner Hekim</span>
             <span aria-hidden="true" className="text-cream/40">
               —
@@ -63,6 +75,7 @@ export function SiteFooter() {
             >
               <LinkedinIcon size={16} />
             </a>
+            </div>
           </div>
         </div>
       </div>

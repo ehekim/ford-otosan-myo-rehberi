@@ -1,8 +1,6 @@
 import { SectionShell } from './section-shell'
 import Image from 'next/image'
-import { CalendarX, ClipboardCheck, AlertTriangle, Sigma, ArrowUpRight } from 'lucide-react'
-
-const CALENDAR_URL = 'https://kocaeli.edu.tr'
+import { CalendarX, ClipboardCheck, AlertTriangle, Sigma } from 'lucide-react'
 
 const grades = ['FF', 'FD', 'DD', 'DC', 'CC', 'CB', 'BB', 'BA', 'AA']
 
@@ -57,24 +55,9 @@ export function Exams() {
             yolunu izleyerek güncel takvime ulaşabilirsin. Ders kayıtları, vize, final ve
             bütünleme haftaları burada ilan edilir.
           </p>
-          <a
-            href={CALENDAR_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex w-fit items-center gap-2 rounded-full bg-cream px-5 py-2.5 font-mono text-xs font-bold tracking-label text-ink transition-opacity hover:opacity-85"
-          >
-            AKADEMİK TAKVİME GİT
-            <ArrowUpRight size={14} aria-hidden="true" />
-          </a>
         </div>
 
-        <a
-          href={CALENDAR_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Akademik takvim sayfasını yeni sekmede aç"
-          className="group lg:col-span-3"
-        >
+        <div className="group lg:col-span-3">
           <figure className="overflow-hidden rounded-md border border-cream/25 bg-cream">
             <div className="flex items-center gap-2 border-b border-ink/15 px-4 py-2.5">
               <span className="h-2.5 w-2.5 rounded-full bg-ink/20" />
@@ -94,7 +77,7 @@ export function Exams() {
               />
             </div>
           </figure>
-        </a>
+        </div>
       </div>
 
       {/* Çan eğrisi */}
